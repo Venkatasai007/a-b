@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+</head>
+<body>
+    <a href="{{url_for('student_logout')}}"> Logout</a>
+    <h1>Employee Details Are:</h1>
+    <p>Name:    {{ name }}</p>
+    <p>Gaurdian Name:    {{ gname1 }}</p>
+    <p>Date of Birth:    {{ dob }}</p>
+    <p>Roll Number:    {{ roll }}</p>
+    
+    <img src="{{ image_url }}" alt="image">
+    
+</body>
+</html>

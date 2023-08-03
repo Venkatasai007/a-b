@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="/add" enctype="multipart/form-data">
+            <a href="{{url_for('admin_logout')}}"> Logout</a>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Student Name...">
+            <br>
+            <label for="G-name">Gaurdians Name:</label>
+            <input type="text" id="G-name" name="G-name" placeholder="Enter Guardian's Name...">
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" placeholder="DD/MM/YYYY">
+            <br>
+            <label for="img_file">Image:</label>
+            <input type="file" id="img_file" name="img_file">
+            <br>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+    </div>
+</body>
+</html>

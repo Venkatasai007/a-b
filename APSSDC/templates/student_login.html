@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/student_page" method="POST">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="pass" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <a href="{{url_for('change_pass')}}">Change password</a>
+    </div>
+</body>
+</html>
